@@ -57,7 +57,7 @@ StegaCode supports the following subcommands:
 For more details on each subcommand, you can use the `--help` flag. For example:
 
 ```bash
-stegacode encode --help
+cargo run encode --help
 ```
 
 ## Examples
@@ -67,7 +67,7 @@ stegacode encode --help
 To encode data into an image, you can use the `encode` subcommand. Provide the path to the input image, data file, and output file name or path using command-line options.
 
 ```bash
-stegacode encode  --file secret_data.txt --image cover_image.png --output encoded_image.png
+cargo run encode  --file secret_data.txt --image cover_image.png --output encoded_image.png
 ```
 
 This will encode the data from `secret_data.txt` into the `cover_image.png` and save the resulting image as `encoded_image.png`.
@@ -77,7 +77,7 @@ This will encode the data from `secret_data.txt` into the `cover_image.png` and 
 To decode data from an image, you can use the `decode` subcommand. Provide the path to the encoded image and optionally specify the output file name or path.
 
 ```bash
-stegacode decode --image encoded_image.png 
+cargo run decode --image encoded_image.png 
 ```
 
 This will decode the data from `encoded_image.png` and save it as `secret.txt`.
