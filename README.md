@@ -4,16 +4,6 @@ Enhancing Information Security through Swift and Dependable Digital Image Stegan
 
 StegaCode is an open-source steganography tool written in Rust. It enables the encoding and decoding of information within images, providing a secure method for hiding sensitive data.
 
-## Table of Contents
-
-- [StegaCode](#stegacode)
-  - [Table of Contents](#table-of-contents)
-  - [Introduction](#introduction)
-  - [Installation](#installation)
-  - [Usage](#usage)
-  - [Examples](#examples)
-  - [Contributing](#contributing)
-  - [License](#license)
 
 ## Introduction
 
