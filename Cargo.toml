@@ -1,12 +1,21 @@
 [package]
-name = "StegaCode"
-version = "0.1.0"
-author = "Arnav Goel"
+name = "stegacode"
+version = "0.2.0"
+authors = ["Arnav Goel"]
 edition = "2021"
-
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+description = "Hide files in PNG images, with optional password encryption"
+license = "MIT"
+repository = "https://github.com/arncv/StegaCode"
 
 [dependencies]
-image = "0.24"
-clap = { version = "3.1.18", features = ["derive"] }
-bitvec = "1.0.1"
+anyhow = "1"
+argon2 = { version = "0.5", features = ["zeroize"] }
+chacha20poly1305 = "0.10"
+clap = { version = "4", features = ["derive"] }
+image = { version = "0.25", default-features = false, features = ["png", "jpeg"] }
+rand_core = { version = "0.6", features = ["getrandom"] }
+rpassword = "7"
+sha2 = "0.10"
+tempfile = "3"
+thiserror = "2"
+zeroize = "1"
